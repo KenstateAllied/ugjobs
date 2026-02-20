@@ -28,13 +28,14 @@ export default function Navbar() {
                 to="/"
                 className={`px-3 py-2 rounded-md transition ${isActive("/")}`}
               >
-                Home
+                Uasin Gishu County Traders Forum
+                
               </Link>
               <Link
                 to="/employees"
                 className={`px-3 py-2 rounded-md transition ${isActive("/employees")}`}
               >
-                Employee List
+                Professionals List
               </Link>
             </>
           ) : (

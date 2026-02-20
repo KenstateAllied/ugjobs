@@ -78,7 +78,7 @@ export default function EmployeeList() {
     <div className="p-4">
       {/* Header */}
       <div className="bg-yellow-300 px-4 py-2 font-semibold text-lg rounded-t-md">
-        Employee List
+        Professionals List
       </div>
 
       {/* Controls */}
@@ -91,7 +91,7 @@ export default function EmployeeList() {
             to="/create-employee"
             className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md shadow"
           >
-            Create Employee
+            Create Professional
           </Link>
           <input
             type="text"
@@ -108,14 +108,14 @@ export default function EmployeeList() {
         <table className="min-w-full bg-white border border-gray-300">
           <thead className="bg-blue-100">
             <tr>
-              <th className="py-2 px-4 border cursor-pointer" onClick={() => handleSort("id")}>Unique ID</th>
-              <th className="py-2 px-4 border">Image</th>
-              <th className="py-2 px-4 border cursor-pointer" onClick={() => handleSort("name")}>Name</th>
+              <th className="py-2 px-4 border cursor-pointer" onClick={() => handleSort("id")}>National ID</th>
+              <th className="py-2 px-4 border">Photo</th>
+              <th className="py-2 px-4 border cursor-pointer" onClick={() => handleSort("name")}>Full Names</th>
               <th className="py-2 px-4 border cursor-pointer" onClick={() => handleSort("email")}>Email</th>
               <th className="py-2 px-4 border">Mobile No</th>
-              <th className="py-2 px-4 border">Designation</th>
-              <th className="py-2 px-4 border">Gender</th>
-              <th className="py-2 px-4 border">Course</th>
+              <th className="py-2 px-4 border">Profession</th>
+              <th className="py-2 px-4 border">Ward</th>
+              <th className="py-2 px-4 border">Village</th>
               <th className="py-2 px-4 border cursor-pointer" onClick={() => handleSort("createdAt")}>Create Date</th>
               <th className="py-2 px-4 border">Action</th>
             </tr>
