@@ -142,7 +142,7 @@ export default function CreateEmployee({ mode }) {
                     </div>
 
                     <div>
-                        <label className="block font-medium">Designation</label>
+                        <label className="block font-medium">Profession</label>
                         <select
                             name="designation"
                             value={formData.designation || ""}
@@ -150,9 +150,15 @@ export default function CreateEmployee({ mode }) {
                             className="border rounded px-3 py-2 w-full"
                         >
                             <option value="">Select</option>
-                            <option value="HR">HR</option>
-                            <option value="Manager">Manager</option>
-                            <option value="Sales">Sales</option>
+                            <option value="HR">Mechanic-Auto</option>
+                            <option value="Manager">Mechanic-Tractor</option>
+                            <option value="Sales">Plumber</option>
+                            <option value="HR">Mason</option>
+                            <option value="Manager">Electrician</option>
+                            <option value="Sales">Saloonist</option>
+                            <option value="HR">Herbalist</option>
+                            <option value="Manager">Nurse</option>
+                            <option value="Sales">Driver</option>
                         </select>
                         {errors.designation && (
                             <p className="text-red-500 text-sm">{errors.designation}</p>
@@ -160,7 +166,7 @@ export default function CreateEmployee({ mode }) {
                     </div>
 
                     <div>
-                        <label className="block font-medium">Gender</label>
+                        <label className="block font-medium">Ward</label>
                         <div className="flex gap-4">
                             <label>
                                 <input
@@ -189,7 +195,7 @@ export default function CreateEmployee({ mode }) {
                     </div>
 
                     <div>
-                        <label className="block font-medium">Course</label>
+                        <label className="block font-medium"></label>
                         <div className="flex gap-4">
                             {["MCA", "BCA", "BSC"].map((course) => (
                                 <label key={course}>
